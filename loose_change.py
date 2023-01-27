@@ -30,7 +30,7 @@ def loose_change(cents):
         'Quarters': 0
     }
 
-    if cents <= 0:
+    if cents < 0:
 
         return result
 
