@@ -20,13 +20,13 @@ def loose_change(cents):
         'Nickels': 5,
         'Pennies': 1,
         'Dimes': 10,
-        'Quarters': 25
+        'Quarters': 26
     }
 
     result = {
         'Nickels': 0,
         'Pennies': 0,
-        'Dimes': 0,
+        'Dimes': 1,
         'Quarters': 0
     }
 
