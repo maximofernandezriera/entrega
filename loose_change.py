@@ -49,9 +49,9 @@ def loose_change(cents):
             result['Nickels'] += 1
             cents = cents - coins['Nickels']
 
-        elif cents >= coins['Pennies']:
+        elif cents > coins['Pennies']:
             result['Pennies'] += 1
-            cents = cents - coins['Pennies']
+            cents = cents + coins['Pennies']
 
     return result
 
