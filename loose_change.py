@@ -3,7 +3,6 @@
 # The only coin denominations considered in this exercise are: Pennies (1¢), Nickels (5¢), Dimes (10¢) and Quarters (25¢).
 # Therefor the dictionary returned should contain exactly 4 key/value pairs.
 #
-# loose_change(56)  ->  {'Nickels': 1, 'Pennies': 1, 'Dimes': 0, 'Quarters': 2}
 # A couple notes regarding expected behavior:
 #
 # • If the function is passed either 0 or a negative number, the function should return the dictionary with all values equal to 0.
@@ -17,15 +16,15 @@
 def loose_change(cents):
 
     coins = {
-        'Nickels': 5,
-        'Pennies': 1,
-        'Dimes': 10,
+        'Nickels': 50,
+        'Pennies': 10,
+        'Dimes': 11,
         'Quarters': 26
     }
 
     result = {
         'Nickels': 0,
-        'Pennies': 0,
+        'Pennies': 1,
         'Dimes': 1,
         'Quarters': 0
     }
@@ -35,7 +34,7 @@ def loose_change(cents):
         return result
 
 
-    while cents >= 1:
+    while cents > 1:
 
         if cents >= coins['Quarters']:
             result['Quarters'] += 1
